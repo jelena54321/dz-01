@@ -153,6 +153,7 @@ class QuizViewController : UIViewController {
                 size: CGSize(width: 299, height: 200)
             )
         )
+        
         if let answerButtons = questionView.answerButtons {
             answerButtons.forEach { (button) in
                 button.addTarget(
@@ -163,6 +164,8 @@ class QuizViewController : UIViewController {
             }
         }
         self.questionViewContainer.addSubview(questionView)
+        
+        
     }
     
     /**
