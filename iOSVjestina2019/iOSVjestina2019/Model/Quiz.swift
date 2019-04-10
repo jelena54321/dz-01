@@ -23,8 +23,8 @@ class Quiz {
     let level: Int
     /// Quiz image.
     let image: String?
-    /// Array of quiz questions.
-    let questions: [Question]
+    /// Dictionary of quiz questions.
+    let questions: [Int: Question]
     
     /**
      Initializes a new **Quiz** object using provided *json* object.
@@ -68,14 +68,14 @@ class Quiz {
      - Parameters:
         - json: *json* object which represents questions
      
-     - Returns: a new **Question** array if provided data can be interpreted as
+     - Returns: a new **Question** dictionary if provided data can be interpreted as
      such, otherwise *nil*.
      */
-    static func parseQuestions(json: [Any]) -> [Question]? {
-        var questions = [Question]()
+    static func parseQuestions(json: [Any]) -> [Int: Question]? {
+        var questions = [Int: Question]()
         for question in json {
             if let unwrappedQuestion = Question(json: question) {
-                questions.append(unwrappedQuestion)
+                questions[unwrappedQuestion.id] = unwrappedQuestion
             } else {
                 return nil
             }

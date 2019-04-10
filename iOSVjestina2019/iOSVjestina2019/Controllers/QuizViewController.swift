@@ -69,10 +69,10 @@ class QuizViewController : UIViewController {
      - Parameters:
         - quizzes: quizzes array
     */
-    func updateFunFact(quizzes: [Quiz]) {
-        let NBACount = quizzes.flatMap { (quiz) -> [Question] in
+    func updateFunFact(quizzes: [Int: Quiz]) {
+        let NBACount = quizzes.values.flatMap { (quiz) -> [Int: Question] in
             quiz.questions
-        }.filter { (question) -> Bool in
+        }.filter { (id, question) -> Bool in
             question.question.contains("NBA")
         }.count
         
@@ -89,8 +89,8 @@ class QuizViewController : UIViewController {
      - Parameters:
         - quizzes: quizzes array
     */
-    func updateBasicQuizInfo(quizzes: [Quiz]) {
-        guard let randomQuiz = quizzes.randomElement() else {
+    func updateBasicQuizInfo(quizzes: [Int: Quiz]) {
+        guard let randomQuiz = quizzes.randomElement()?.value else {
             return
         }
     
@@ -120,8 +120,8 @@ class QuizViewController : UIViewController {
      - Parameters:
         - quizzes: quizzes array
     */
-    func displayQuestion(quizzes: [Quiz]) {
-        guard let randomQuestion = quizzes[quizId! - 1].questions.randomElement() else {
+    func displayQuestion(quizzes: [Int: Quiz]) {
+        guard let randomQuestion = quizzes[quizId!]?.questions.randomElement()?.value else {
             return
         }
        
@@ -150,7 +150,7 @@ class QuizViewController : UIViewController {
         let questionView = QuestionView(
             frame: CGRect(
                 origin: CGPoint(x: 0, y: 0),
-                size: CGSize(width: 299, height: 200)
+                size: CGSize(width: 299, height: 310)
             )
         )
         

@@ -18,7 +18,7 @@ class QuizService {
         - urlString: string representation of url source
         - onComplete: action which will be executed once fetch is finished
     */
-    func fetchQuizzes(urlString: String, onComplete: @escaping (([Quiz]?) -> Void)) {
+    func fetchQuizzes(urlString: String, onComplete: @escaping (([Int: Quiz]?) -> Void)) {
         if let url = URL(string: urlString) {
             
             let request = URLRequest(url: url)
@@ -47,28 +47,28 @@ class QuizService {
     }
     
     /**
-     Parses provided *json* object into **Quiz** array.
+     Parses provided *json* object into **Quiz** dictionary.
      
      - Parameters:
         - json: *json* object which represents quizzes
      
-     - Returns: a new **Quiz** array if provided data can be interpreted as
+     - Returns: a new **Quiz** dictionary if provided data can be interpreted as
      such, otherwise *nil*.
     */
-    static func parseQuizzes(json: Any) -> [Quiz]? {
+    static func parseQuizzes(json: Any) -> [Int: Quiz]? {
         if let jsonDictionary = json as? [String: Any],
            let quizzes = jsonDictionary["quizzes"] as? [Any] {
             
-            var quizArray = [Quiz]()
+            var quizDictionary = [Int: Quiz]()
             for quiz in quizzes {
                 if let unwrappedQuiz = Quiz(json: quiz) {
-                    quizArray.append(unwrappedQuiz)
+                    quizDictionary[unwrappedQuiz.id] = unwrappedQuiz
                 } else {
                     return nil
                 }
             }
             
-            return quizArray
+            return quizDictionary
         }
         
         return nil

@@ -66,8 +66,8 @@ class QuestionView: UIView {
         for i in 0...3 {
             let button = UIButton(
                 frame: CGRect(
-                    origin: CGPoint(x: 0, y: 58 + 34 * i),
-                    size: CGSize(width: 299, height: 32)
+                    origin: CGPoint(x: 0, y: 58 + 40 * i),
+                    size: CGSize(width: 299, height: 38)
                 )
             )
             button.backgroundColor = UIColor.lightGray
