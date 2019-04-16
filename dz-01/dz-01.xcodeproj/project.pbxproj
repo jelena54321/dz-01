@@ -23,6 +23,7 @@
 		EB5EB5902256CA0A001F603E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5EB58F2256CA0A001F603E /* LoginViewController.swift */; };
 		EB5EB5922256CA38001F603E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB5EB5912256CA38001F603E /* LoginViewController.xib */; };
 		EB5EB59422575EA3001F603E /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5EB59322575EA3001F603E /* LoginService.swift */; };
+		EB5EB59622578B9C001F603E /* QuestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB5EB59522578B9C001F603E /* QuestionView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		EB5EB58F2256CA0A001F603E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EB5EB5912256CA38001F603E /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		EB5EB59322575EA3001F603E /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		EB5EB59522578B9C001F603E /* QuestionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				EB5EB58D22562654001F603E /* QuestionView.swift */,
+				EB5EB59522578B9C001F603E /* QuestionView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 			files = (
 				EB5EB5922256CA38001F603E /* LoginViewController.xib in Resources */,
 				EB03B1592252949000357115 /* LaunchScreen.storyboard in Resources */,
+				EB5EB59622578B9C001F603E /* QuestionView.xib in Resources */,
 				EB03B1562252949000357115 /* Assets.xcassets in Resources */,
 				EB03B1672252999400357115 /* QuizViewController.xib in Resources */,
 				EB03B1542252948E00357115 /* Main.storyboard in Resources */,
