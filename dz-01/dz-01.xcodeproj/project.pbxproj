@@ -24,6 +24,7 @@
 		EB5EB5922256CA38001F603E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB5EB5912256CA38001F603E /* LoginViewController.xib */; };
 		EB5EB59422575EA3001F603E /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5EB59322575EA3001F603E /* LoginService.swift */; };
 		EB5EB59622578B9C001F603E /* QuestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB5EB59522578B9C001F603E /* QuestionView.xib */; };
+		EBCF5E4822667C5600022041 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBCF5E4722667C5600022041 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		EB5EB5912256CA38001F603E /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		EB5EB59322575EA3001F603E /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		EB5EB59522578B9C001F603E /* QuestionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionView.xib; sourceTree = "<group>"; };
+		EBCF5E4722667C5600022041 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		EB03B1422252948E00357115 = {
 			isa = PBXGroup;
 			children = (
+				EBCF5E4722667C5600022041 /* Default-568h@2x.png */,
 				EB03B14D2252948E00357115 /* iOSVjestina2019 */,
 				EB03B14C2252948E00357115 /* Products */,
 			);
@@ -89,7 +92,8 @@
 				EB03B1572252949000357115 /* LaunchScreen.storyboard */,
 				EB03B15A2252949000357115 /* Info.plist */,
 			);
-			path = iOSVjestina2019;
+			name = iOSVjestina2019;
+			path = "dz-01";
 			sourceTree = "<group>";
 		};
 		EB03B1602252969F00357115 /* Controllers */ = {
@@ -167,7 +171,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EB03B1462252948E00357115 /* Build configuration list for PBXProject "iOSVjestina2019" */;
+			buildConfigurationList = EB03B1462252948E00357115 /* Build configuration list for PBXProject "dz-01" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -195,6 +199,7 @@
 				EB5EB59622578B9C001F603E /* QuestionView.xib in Resources */,
 				EB03B1562252949000357115 /* Assets.xcassets in Resources */,
 				EB03B1672252999400357115 /* QuizViewController.xib in Resources */,
+				EBCF5E4822667C5600022041 /* Default-568h@2x.png in Resources */,
 				EB03B1542252948E00357115 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,7 +402,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EB03B1462252948E00357115 /* Build configuration list for PBXProject "iOSVjestina2019" */ = {
+		EB03B1462252948E00357115 /* Build configuration list for PBXProject "dz-01" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB03B15B2252949000357115 /* Debug */,
